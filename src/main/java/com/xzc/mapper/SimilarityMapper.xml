@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xzc.mapper.SimilarityMapper">
+
+    <insert id="addSimilarity" parameterType="com.xzc.entity.Similarity">
+        insert into provgnn.test5_sim (entity_id, similarity) values (#{entityId},#{similarity})
+    </insert>
+</mapper>

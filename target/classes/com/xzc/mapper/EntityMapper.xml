@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xzc.mapper.EntityMapper">
+    <select id="getEntity" resultType="com.xzc.entity.Entity">
+        select * from provgnn.test5
+    </select>
+    <insert id="addEntity" parameterType="com.xzc.entity.Entity">
+        insert into provgnn.test5 (entity_id, entity_name) values (#{entityId},#{entityName})
+    </insert>
+</mapper>
